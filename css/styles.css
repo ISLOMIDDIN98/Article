@@ -103,52 +103,42 @@ img{
 
 
 }
-.main-bottom {
+
+.main-link{
+display: inline-block;
+background-color: #1E90FF;
+color: #fff;
+font-family:"Bebas Neue", "Arial", sans-serif;
+font-size: 16px;
+line-height: 24px;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.main-link-inner{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;
-
-
-  font-family:"Bebas Neue", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-
-  /* identical to box height, or 150% */
-  letter-spacing: 2px;
-  background: #1E90FF;
-  color: #FFFFFF;
-
-
+  padding: 12px  24px;
 }
 
-.main-bottom:hover{
-  background: rgba(30, 144, 255, 0.8);
-}
-
-.main-bottom:active{
-  background: rgba(30, 144, 255, 0.6);
-}
-
-.bottom-icon {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+.main-link-inner::before{
   width: 20px;
-  height: 19px;
+  height: 20px;
   margin-right: 12px;
-  background-image: url(../img/Vector.svg);
+  background-image:url(../img/Vector.svg);
+  background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position:center;
+content: "";
 }
-.bottom-text {
-}
+
+/* .main-link-text {
+
+} */
+
 .hero {
   width: 600px;
-  margin-left: 54px;
+  padding-left: 54px;
 }
 .hero-heading {
 
@@ -161,6 +151,7 @@ img{
   margin-top: 54px;
   margin-bottom: 24px ;
   color: #222;
+ /* border-bottom: 1px solid #999999; */
 
 }
 
@@ -206,6 +197,7 @@ img{
   margin: 0;
   padding-top: 16px;
   padding-right: 9px;
+  margin-bottom: 4px;
 }
 
 .article-heading:hover{
@@ -238,7 +230,7 @@ img{
   align-items: center;
   width: 16px;
   height: 16px;
-  margin-right: 12px;
+  margin-right: 5px;
   background-image: url(../img/Vector\(3\).svg);
   background-repeat:no-repeat;
   /* background-size: cover; */
@@ -270,7 +262,7 @@ img{
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 4px;
+
 }
 
 .hero-footer {
@@ -301,4 +293,19 @@ img{
 
 .hero-footer:active{
   opacity: 0.6;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ .hero-footer-article-item-icon-watch{
+  background-image: url(../img/Vector\(3\)@2x.svg);
+ }
+  .hero-footer-article-item-icon{
+    background-image: url(../img/Vector-1@2x.svg);
+  }
 }
